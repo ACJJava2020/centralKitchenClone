@@ -1,0 +1,423 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+div.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #ff0000;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+    border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+    border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #f7e700;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    border: 1px solid #ff0000;
+    background: #fff;
+    padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+    content: " ";
+}
+
+.wpcf7-display-none {
+    display: none;
+}
+
+div.wpcf7 .ajax-loader {
+    visibility: hidden;
+    display: inline-block;
+    background-image: url('../../images/ajax-loader.gif');
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+    visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+    display: none;
+}
+
+div.wpcf7 .placeheld {
+    color: #888;
+}
+
+div.wpcf7 input[type="file"] {
+    cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+    cursor: default;
+}
+
+div.wpcf7 .wpcf7-submit:disabled {
+    cursor: not-allowed;
+}
+
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+.tweeter-info .fts-twitter-text, .fts-twitter-reply-wrap:before, a span.fts-video-loading-notice {
+    color: #333333 !important;
+}
+
+/* Search & Filter Styles */
+body
+{
+    display:block;
+}
+.searchandfilter p
+{
+    margin-top: 1em;
+    display:inline-block;
+}
+.searchandfilter ul
+{
+    display:inline-block;
+}
+.searchandfilter li
+{
+    list-style: none;
+    display:inline-block;
+    padding-right:10px;
+}
+
+/* If in a widget area make a single column by adding display block  */
+.widget-area .searchandfilter li, .widget-area .searchandfilter p
+{
+    display:block;
+}
+.searchandfilter label
+{
+    display:block;
+}
+.searchandfilter h4
+{
+    margin:15px 0;
+    font-size:16px;
+}
+
+.searchandfilter ul > li > ul:not(.children)
+{
+    margin-left:0;
+}
+
+.wd_error {
+    border-color: #dd3d36 !important;
+}
+
+.wd_updated {
+    border-color: #7ad03a !important;
+}
+
+.wd_error,
+.wd_updated {
+    background: #fff none repeat scroll 0 0;
+    border-left: 4px solid #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 5px 0 2px;
+    padding: 1px 12px;
+}
+
+.wds_more {
+    font-size: 12px;
+}
+
+div[id^="wds_container"] * {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1;
+}
+
+div[id^="wds_container"] p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div[id^="wds_container"] video {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wds_layer a,
+.wds_layer a:hover {
+    color: inherit !important;
+    font-size: inherit !important;
+    font-style: inherit !important;
+    font-weight: inherit !important;
+    text-decoration: none;
+}
+
+.wds_loading_img {
+    border: none !important;
+    float: none;
+    height: 30px;
+    background-image: url('../images/ajax_loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    border: medium none !important;
+}
+
+.wds_loading {
+    text-align: center;
+    height: 150px;
+    margin-top: 60px;
+}
+
+div[id^="wds_container"] .wds_btn_cont {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+div[id^="wds_container"] .wds_contTableCell {
+    display: table-cell;
+}
+
+div[id^="wds_container"] .wds_contTable {
+    display: table;
+}
+
+div[id^="wds_container"] .wds_left_btn_cont,
+div[id^="wds_container"] .wds_right_btn_cont,
+div[id^="wds_container"] .wds_pp_btn_cont {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 150;
+}
+
+div[id^="wds_container"] .wds_left_btn_cont {
+    margin-left: 10px;
+}
+
+div[id^="wds_container"] .wds_right_btn_cont {
+    margin-right: 10px;
+}
+
+.wds_preview_cont1 {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.wds_preview_cont2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+span[data-type="wds_text_parent"] * {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+@-webkit-keyframes wdszoom0 { 100% { background-size: 170%; }}
+@-webkit-keyframes wdszoom70 { 100% { background-size: 100%; }}
+@-moz-keyframes wdszoom0 { 100% { background-size: 170%; }}
+@-moz-keyframes wdszoom70 { 100% { background-size: 100%; }}
+@keyframes wdszoom0 { 100% { background-size: 170%; }}
+@keyframes wdszoom70 { 100% { background-size: 100%; }}
+
+.wds_play_btn_cont{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index: 1;
+    cursor:pointer
+}
+
+.svc_social_stream_container{ display:none;}
+#loader {background-image: url("https://dccentralkitchen.org/wp-content/plugins/vc-social-stream/inc/../addons/social-stream/css/loader.GIF");}
+body.custom-background { background-color: #ffffff; }
+
